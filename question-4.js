@@ -7,7 +7,7 @@ const inventory = [
 // เริ่มเขียนโค้ดตรงนี้
 function minQuantityProduct(inventory) {
   let minQuantity = inventory[0].quantity;
-  let productName = "";
+  let productName = inventory[0].name;
   for (let product of inventory) {
     if (product.quantity < minQuantity) {
       minQuantity = product.quantity;
